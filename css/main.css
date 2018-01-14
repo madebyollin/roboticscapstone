@@ -1,0 +1,100 @@
+/* Project-specific design and layout */
+
+
+body {
+    background: hsl(0, 0%, 98%);
+    min-height: 100vh;
+}
+
+header {
+    background: black;
+    padding: 32px;
+    margin-bottom: 64px;
+}
+
+header>h1 {
+    color: white;
+    padding: 0em;
+}
+
+header>h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 200;
+    text-align: center;
+}
+
+#posts {
+    min-width: 512px;
+    width: 50%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#posts>li>a {
+    background: white;
+    display: block;
+    padding: 32px 48px;
+    color: black;
+    font-size: 1.8rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0);
+    transition: .1s ease transform;
+}
+
+#posts>li>a:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 64px 0 rgba(0, 0, 0, .1);
+}
+
+#posts>li>a:active {
+    transform: scale(1.0);
+}
+
+body.post {
+    background: white;
+}
+
+main {
+    min-width: 512px;
+    width: 50%;
+    margin: 0 auto;
+    border-top: 1px solid hsl(0, 0%, 95%);
+    margin-top: 32px;
+}
+
+main h2 {
+    margin-top: 32px;
+}
+span.placeholder {
+    padding: 4px 8px;
+}
+.placeholder {
+    padding: 16px 32px;
+    /* border-radius: 16px; */
+    background: #e0d7ff;
+    color: #6150b3;
+    margin: 32px 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+.placeholder * {
+    color: #6150b3 !important;
+}
+
+.placeholder::selection, .placeholder *::selection {
+    background: rgba(97, 80, 179, 0.2);
+}
+
+img.placeholder {
+    display: block;
+    width: 720px;
+    height: 64px;
+    border: 0;
+    padding: 16px;
+    border-radius: 0;
+}
+
+ul.placeholder {
+    padding-left: 48px;
+}
