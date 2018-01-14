@@ -36,9 +36,16 @@ header>h2 {
     padding: 32px 48px;
     color: black;
     font-size: 1.8rem;
-    border-radius: 16px;
+    /* border-radius: 16px; */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0);
     transition: .1s ease transform;
+    margin-bottom: 32px;
+}
+
+#posts>li>a>.subtitle {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 200;
 }
 
 #posts>li>a:hover {
@@ -52,6 +59,15 @@ header>h2 {
 
 body.post {
     background: white;
+}
+body.post>h1 {
+    padding-bottom: 16px;
+}
+body.post>h2 {
+    text-align: center;
+    padding: 0 32px;
+    font-weight: 200;
+    margin-bottom: 64px;
 }
 
 main {
