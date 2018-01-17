@@ -6,6 +6,11 @@ body {
     min-height: 100vh;
 }
 
+#headerLogo {
+    display: block;
+    margin: 0 auto;
+}
+
 header {
     background: black;
     padding: 32px;
