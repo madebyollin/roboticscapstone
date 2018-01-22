@@ -141,9 +141,9 @@ table {
     width: 100%;
 }
 
-table td:first-of-type, table th:first-of-type  {
+/* table td:first-of-type, table th:first-of-type  {
     text-align: right;
-}
+} */
 
 table img {
     width: auto;

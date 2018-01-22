@@ -15,10 +15,19 @@
     <h2>Robot Teleoperation Process</h2>
     <main>
         <h2>Video of Teleoperation:</h2>
-        <p class="placholder">Video!</p>
+        <p>We were able to successfully complete the required task after a few tries (relying heavily on memory).  Our video is shown below:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/m8UwyXF4izs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <h2>Interface Explanation:</h2>
-        <p>We built the following interface in Polymer.js.  Component descriptions are shown inline:</p>
-        <img class="placeholder" src="interface.jpg" />
+        <p>Our interface includes the following components:</p>
+        <ul>
+            <li><strong>Camera View</strong>: The RGB camera feed from the robot's head-mounted camera</li>
+            <li><strong>Torso Height</strong>: The current height of the robot's torso, in meters</li>
+            <li><strong>Base Control</strong>: Motion control of the base, including forward/back (translation) and left/right (rotation) buttons.  The robot moves at a fixed rate while the buttons are held down.</li>
+            <li><strong>Gripper Control</strong>: Buttons to open and close the gripper at the end of the robot's arm</li>
+            <li><strong>Head Control</strong>: Sliders to control the head tilt and pan angles (and the camera view)</li>
+            <li><strong>Arm Control</strong>: Sliders to control the arm joint angles</li>
+        </ul>
+        <p>We made sure that all control buttons would be visible without having to scroll down the page, making the teleoperation process easier.</p>
     </main>
 </body>
 
