@@ -137,8 +137,12 @@ ol {
 table {
     margin: 1em auto;
     border-collapse: collapse;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(240, 240, 240);
     width: 100%;
+}
+
+table td:first-of-type, table th:first-of-type  {
+    text-align: right;
 }
 
 table img {

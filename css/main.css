@@ -11,6 +11,13 @@ body {
     margin: 0 auto;
 }
 
+#postHeaderLogo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
 header {
     background: black;
     padding: 32px;
@@ -66,6 +73,7 @@ body.post {
     background: white;
 }
 body.post>h1 {
+    padding-top: 16px;
     padding-bottom: 16px;
 }
 body.post>h2 {
