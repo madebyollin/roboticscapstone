@@ -91,6 +91,11 @@ main {
     margin-top: 32px;
 }
 
+main iframe {
+    display:block;
+    margin: 32px auto;
+}
+
 main h2 {
     margin-top: 32px;
 }
