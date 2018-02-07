@@ -4,6 +4,7 @@
 body {
     background: hsl(0, 0%, 98%);
     min-height: 100vh;
+    padding-bottom: 32px;
 }
 
 #headerLogo {
