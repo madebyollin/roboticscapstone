@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A•Robotics</title>
+    <link rel="stylesheet" href="/css/basics.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/favicon.png">
+</head>
+
+<body class="post">
+    <a href="/"><img src="/favicon.png" width="128px" id="postHeaderLogo"/></a>
+    <h1>Blog Post #8 Part 2</h1>
+    <h2>ROS Backend (Perception) Progress Report</h2>
+    <main>
+        <p>The primary goal of our perception group (for now) is to reliably detect the user for initial contact so we can navigate them to their destination using our existing navigation code.</p>
+    <p>To that end, we've experimented with parameters for both the AR tag reader and iOS app in order to better identify AR tags that are on the phone.</p>
+    <p>We also found that we got the best results for AR identification using a lower display brightness on the phone of around 0.3x max brightness (luckily, we can set this in our app when it pulls up the AR code).</p>
+    <p>In our initial iteration of user localization, we only use the phone’s AR tag to adjust the robot's base position, so that the AR tag will be exactly at the center of the robot’s view. The next step for us is to raise the robot's guidance handle as part of the robot-to-user pairing process, by either placing the robot’s arm next to the AR tag (or detecting and touching the user's hand directly).</p>
+    <p>A video of our initial implementation is shown below (using a static marker held at the appropriate height):</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ISkeIy5Rcnw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A•Robotics</title>
+    <link rel="stylesheet" href="/css/basics.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/favicon.png">
+</head>
+
+<body class="post">
+    <a href="/"><img src="/favicon.png" width="128px" id="postHeaderLogo"/></a>
+    <h1>Blog Post #8 Part 4</h1>
+    <h2>Interview Notes</h2>
+    <main>
+        <p>In order to evaluate the functionalities of the project, we interviewed a person with visual impairments. We have presented the project and its components. We also displayed the functionalities offered by the app. Here is the feedback we have received.</p>
+        <br>
+        <h3>Main settings :</h3>
+        <p>We have discussed the initial settings to make the robot more comfortable and safe to use for each person.</p>
+        <ul>
+            <li>Height: Set the torso height depending on the user’s height.<br> When guided, people usually prefer holding their guide’s shoulder. We should therefore place the robot’s hand at the right height.</li>
+            <li>Arm position: two positions can be saved depending on whether the user is left or right handed.<br>The user will keep the white cane in their right/left hand, they will put the other hand on the handle. </li>
+            <li>User’s phone position / settings after pairing.<br>Currently, to keep the user’s phone paired with the robot it needs to stay active (and app open). However, the user needs to put away the phone in order to hold the robot’s arm by one hand and the cane by the other. We will need to find ways to keep the connection active during the trip. The user can also place the phone on the robot (on top of the head maybe or add a part to the handle to place it).</li>
+            <li>Using start and stop buttons on the robot to start and stop without using the phone.</li>
+        </ul>
+        <br>
+
+        <h3>Human recognition:</h3>
+        <p>When the user calls the robot specifying the pickup location, the robot will go to that location and look for the user. The user will display a QR code on the phone, the robot will detect it and get closer to the person. In order to make sure that the person is facing the robot (and therefore the phone facing the robot), the phone connected to the robot will emit a beep to indicate its position.</p>
+        <ul>
+            <li>Replace the localization speech “ Navigation assistance is here” by a beep. <br> In the current app, the robot’s device (on speaker mode) will say “ Navigation assistance is here” when prompted by the user. According to our interviewee, it is easier to hear and localize a beep than words, especially in crowded areas.</li>
+        </ul>
+        <br>
+
+        <h3>Delays management:</h3>
+        <p>In order to make the guiding process safer, we will add (or increase) delays between certain actions:</p>
+        <ul>
+            <li>Add a delay before going to the destination, in order to ensure that the user has enough time to grab the handle and settle.</li>
+            <li>Add a delay after arriving to the destination. The robot indicates that they have arrived to destination and waits until the user unpairs the communication (unpair button + safety delay)</li>
+        </ul>
+        <br>
+
+        <h3>Notifications about obstacles:</h3>
+        <p>One problem mentioned by our interviewee is doorways and the necessity to go behind the guide when walking through a doorway or a narrower way. This is also valid for other types of obstacles. We currently plan on adding speaking scene info.</p>
+        <br>
+
+        <h3>Other functionalities:</h3>
+        <p>One of our stretch goals was to detect if the door is open or closed and move the arm to the position of the doorknob. However, according to our interviewee this is not necessary since these are easy to detect (using the cane for example). Guiding the person in front of the door would be enough.</p>
+        <br>
+
+        <h3>Accessibility:</h3>
+        <ul>
+        	<li>In order to make the app more accessible: Add instructions on how to use the app, explaining the settings and functionalities.</li>
+        	<li>Add directions to the main station from the entrance where the robot will be first picked up.</li>
+        </ul>
+    </main>
+</body>
+
+</html>

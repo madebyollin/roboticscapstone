@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A•Robotics</title>
+    <link rel="stylesheet" href="/css/basics.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/favicon.png">
+</head>
+
+<body class="post">
+    <a href="/"><img src="/favicon.png" width="128px" id="postHeaderLogo"/></a>
+    <h1>Blog Post #8 Part 1</h1>
+    <h2>iOS Frontend Progress Report</h2>
+    <main>
+        <p>This week, we made good progress on the iOS app. We also completed a server that can communicate with both the robot and instances of the iOS app. This allows the iOS app to control the robot directly.</p>
+        <p>Currently, there are a few functions that are completed, namely: asking the robot to speak, and telling the robot to go to a specific room. In addition, the app implements a "pairing" abstraction that ensures that only one person can control the robot at a time. Lastly, the app is very resilient to issues with the server or robot going down; both the server and the app can run for days even if the other one goes down.</p>
+        <p>The remaining work is to test navigation on the real robot (once the map of the hallway is done), and add some stretch goal features such as a left handed mode and speaking directions/route info. We also have to update the app to support the pair via AR code feature. The screenshots below show the various screens that have been implemented in the app so far.</p>
+        <img style="width: 320px; border: 1px solid rgba(0,0,0,0.1);" src="ios_frontend_1.png" />
+        <img style="width: 320px; border: 1px solid rgba(0,0,0,0.1);" src="ios_frontend_2.png" />
+        <img style="width: 320px; border: 1px solid rgba(0,0,0,0.1);" src="ios_frontend_3.png" />
+        <img style="width: 320px; border: 1px solid rgba(0,0,0,0.1);" src="ios_frontend_4.png" />
+        <img style="width: 320px; border: 1px solid rgba(0,0,0,0.1);" src="ios_frontend_5.png" />
+        <img style="width: 320px; border: 1px solid rgba(0,0,0,0.1);" src="ios_frontend_6.png" />
+    </main>
+</body>
+
+</html>
