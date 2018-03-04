@@ -10,10 +10,12 @@ print () { echo -e "$bold$bblue$1$endc" ;}
 content_dir="posts"
 template_dir="posts/_template"
 
-print "post_short_name (e.g. a1p1):"
-read short_name
-print "Post Proper Title (e.g. Blog Post #1 Part 1):"
-read proper_title
+print "Assignment Number:"
+read assignment_number
+print "Post Number:"
+read post_number
+short_name="a${assignment_number}p${post_number}"
+proper_title="Blog Post #${assignment_number} Part ${post_number}"
 print "Subtitle (e.g. Project Proposal Critiques):"
 read subtitle
 
