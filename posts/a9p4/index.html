@@ -14,7 +14,21 @@
     <h1>Blog Post #9 Part 4</h1>
     <h2>Progress Update</h2>
     <main>
-        <p class="placeholder">--</p>
+        <h3>Navigation</h3>
+        <p>This week, we got the robot to work with the app to navigate between a start position and a destination position. We made some changes to make the robot more capable of finding a path. Additionally, we slowed the robot down so that it moves at
+            about half of its maximum speed when going forward and turning.</p>
+        <p><strong>Worked on:</strong> Kennan, Yifan</p>
+
+        <h3>Speech</h3>
+        <p>Previously, the robot was turning too quickly and it was hard to follow. We thought this would be difficult for a blind person to use. To solve this problem, if the robot is making a sharp turn, it will speak "turning right" or "turning left"
+            so that everyone around it knows what it's doing. We used the sound tutorial to do this.</p>
+        <p><strong>Worked on:</strong> Kennan, Yifan</p>
+
+        <h3>Pressure</h3>
+        <p>We got the pressure sensor working with Arduino, then connected the Arduino to the robot. We then run code on the robot that reads the pressure data and publishes it. Our main navigation ros node subscribes to this pressure publisher and uses
+            the data to make navigation more responsive to the user's state. When the user sends a navigation request in the app, the robot won't start moving until it feels pressure. Then, if the user lets go in the middle of navigation, the robot will
+            stop moving until the user takes its hand again.</p>
+        <p><strong>Worked on:</strong> Kennan, Ollin, Yifan, Ghada</p>
     </main>
 </body>
 
