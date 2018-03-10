@@ -17,21 +17,25 @@
         <h2>Navigation</h2>
         <p>This week, we got the robot to work with the app to navigate between a start position and a destination position. We made some changes to make the robot more capable of finding a path. Additionally, we slowed the robot down so that it moves at
             about half of its maximum speed when going forward and turning.</p>
+            <p><a href="https://github.com/cse481wi18/team3/commit/1c86eaa2e37aa26bfcbaf0ba9c185720c196987f">Link to code</a></p>
         <p><strong>Worked on:</strong> Kennan, Yifan</p>
 
         <h2>Speech</h2>
         <p>Previously, the robot was turning too quickly and it was hard to follow. We thought this would be difficult for a blind person to use. To solve this problem, if the robot is making a sharp turn, it will speak "turning right" or "turning left"
             so that everyone around it knows what it's doing. We used the sound tutorial to do this.</p>
+            <p><a href="https://github.com/cse481wi18/team3/commit/6eda41a4be7f03c280890b74a51f9f6242da9e3b">Link to code</a></p>
         <p><strong>Worked on:</strong> Kennan, Yifan</p>
 
         <h2>Pressure</h2>
         <p>We got the pressure sensor working with Arduino, then connected the Arduino to the robot. We then run code on the robot that reads the pressure data and publishes it. Our main navigation ros node subscribes to this pressure publisher and uses
             the data to make navigation more responsive to the user's state. When the user sends a navigation request in the app, the robot won't start moving until it feels pressure. Then, if the user lets go in the middle of navigation, the robot will
             stop moving until the user takes its hand again.</p>
+            <p><a href="https://github.com/cse481wi18/team3/commit/c1ed69500c01122de9374a1c69faedf241381d24">Link to code</a></p>
         <p><strong>Worked on:</strong> Kennan, Ollin, Yifan, Ghada</p>
 
-        <h2>Perception</h2>
+        <h2>Perception &amps; Initial Contact</h2>
         <p>
+          We've made improvements to our initial contact logic based on testing to make it more reliable.
           Our robot can find AR tags that is displayed on the phone when
           it is within the robot's peripheral vision. The robot computes the pose
           of the AR tag relative to its base and reaches its gripper about 20 cm
@@ -42,7 +46,7 @@
           the user if the gripper makes contact with the user's hand. We will also
           pre-record a motion so that we can easily start navigating the user.
         </p>
-        <p><strong>Worked on:</strong> Ollin, Kevin<p>
+        <p><strong>Worked on:</strong> Ollin, Kevin</p>
     </main>
 </body>
 
